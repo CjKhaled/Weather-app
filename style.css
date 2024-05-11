@@ -29,6 +29,11 @@ h5 {
   color: white;
 }
 
+h1 {
+    font-size: 7rem;
+    margin-bottom: 100px;
+}
+
 h3 {
   font-size: 2.2rem;
   letter-spacing: 0.1rem;
@@ -48,14 +53,26 @@ h4 {
   font-weight: 900;
 }
 
+h5 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
 h4::after,
 .feels-like::after {
   content: "\00B0 F";
+  font-size: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
 
 input {
-  height: 100%;
-  width: 50%;
+  width: 600px;
   border: none;
   outline: none;
   background: rgba(255, 255, 255, 0.2);
@@ -63,18 +80,55 @@ input {
   color: #ffffff;
   font-size: 1.6rem;
   border-radius: 0.5rem;
+  flex-basis: 100%;
+}
+
+.submit-button {
+    border: none;
+    background-color: transparent;
+}
+
+.submit-button > svg {
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.submit-button {
+    align-self: flex-start;
 }
 
 .container {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .weather-info {
-  border: solid 1px white;
+  margin-top: 40px;
   padding: 50px;
+}
+
+.specific-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right {
+    padding-left: 30px;
+    border-left: solid 1px white;
+}
+
+.left {
+    padding-right: 30px;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+}
+
+span.error {
+    color: red;
 }
