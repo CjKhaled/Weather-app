@@ -1,5 +1,5 @@
 const APIKey = '8ee7c550c76a48a889b124044240905'
-const defaultLocation = 'north port'
+const defaultLocation = 'san diego'
 const city = document.querySelector('.location')
 const condition = document.querySelector('.condition')
 const temperature = document.querySelector('.temperature')
